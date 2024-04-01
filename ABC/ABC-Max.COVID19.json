@@ -1,0 +1,19 @@
+{
+    "projectDir": "./",
+    "codeDir": "src/",
+    "logDir": "log/",
+    "outDir": "out/",
+    "chrSizes": "resource/sizes",
+    "CDS": "resource/GeneCDS.bed",
+    "bgVariants": "resource/all.bg.SNPs.bed.gz",
+    "tssFile": "resource/RefSeqCurated.170308.bed.CollapsedGeneBounds.TSS500bp.bed",
+    "predictorOfChoice": "ABC",
+    "predictionsTable": "config/ABC-Max.config-preds.tsv",
+    "traitTable": "config/ABC-Max.config-traits.tsv",
+    "predictions": [
+        "ABC"
+    ],
+    "traits": [
+        "COVID19"
+    ]
+}

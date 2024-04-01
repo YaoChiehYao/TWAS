@@ -1,0 +1,2 @@
+entry	dir	varList	csList	varFilterCol	varScoreType	varFilterThreshold	knownGenes
+COVID19	data/	data/COVID19_HGI_ALL_20201020.b37.independent.txt	data/COVID19_HGI_ALL_20201020.b37.PoPS.Genes.txt	PosteriorProb	PP	0.1	data/GeneLists.COVID19.txt
