@@ -1,8 +1,8 @@
 #!/bin/bash
-MODEL_DB_PATH="/home/yao.yao-/MetaXcan/software/predi_models"
-GWAS_FILE_PATH="/home/yao.yao-/MetaXcan/software/data_covid"
-OUTPUT_FILE_PATH="/home/yao.yao-/MetaXcan/software/output"
-META_SOFTWARE_PATH="/home/yao.yao-/MetaXcan/software"
+MODEL_DB_PATH="MetaXcan/software/predi_models"
+GWAS_FILE_PATH="MetaXcan/software/data_covid"
+OUTPUT_FILE_PATH="MetaXcan/software/output"
+META_SOFTWARE_PATH="MetaXcan/software"
 
 gwas_files=(
   "COVID19_HGI_A1_ALL_20201020.txt.gz"

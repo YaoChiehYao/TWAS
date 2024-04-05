@@ -4,16 +4,19 @@
 #source activate
 
 # Clone repo if it doesn't already exist
-#if [ ! -d "MetaXcan" ]; then
-#  git clone https://github.com/hakyimlab/MetaXcan
-#fi
-#cd MetaXcan/software
+if [ ! -d "MetaXcan" ]; then
+ git clone https://github.com/hakyimlab/MetaXcan
+fi
+cd MetaXcan/software
 
 # Environment setting
-#if [ ! -d "envs/imlabtools" ]; then  # Check if environment already exists
-#  conda env create -f conda_env.yaml
-#fi
-#conda activate imlabtools
+if [ ! -d "envs/imlabtools" ]; then  # Check if environment already exists
+ conda env create -f conda_env.yaml
+fi
+conda activate imlabtools
+
+
+cd MetaXcan/software
 
 dir="data_covid"
 mkdir -p "$dir"

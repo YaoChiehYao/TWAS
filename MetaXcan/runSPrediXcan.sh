@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Define paths
-MODEL_DB_PATH="/home/yao.yao-/MetaXcan/software/predi_models"
-GWAS_FILE_PATH="/home/yao.yao-/MetaXcan/software/data_covid"
-OUTPUT_FILE_PATH="/home/yao.yao-/MetaXcan/software/output"
-
+MODEL_DB_PATH="MetaXcan/software/predi_models"
+GWAS_FILE_PATH="MetaXcan/software/data_covid"
+OUTPUT_FILE_PATH="MetaXcan/software/output"
+SPREDIXCAN_PATH="MetaXcan/software/SPrediXcan.py"
 
 mkdir -p "$OUTPUT_FILE_PATH/spredixcan"
 mkdir -p "$OUTPUT_FILE_PATH/smultixcan"
@@ -35,7 +35,7 @@ for gwas_file in "${gwas_files[@]}"; do
         model_db="mashr_${tissue}"
         output_filename="${gwas_file%.txt.gz}__PM__${tissue}.csv"
 
-        ./SPrediXcan.py \
+        $SPREDIXCAN_PATH \
         --model_db_path $MODEL_DB_PATH/eqtl/mashr/${model_db}.db \
         --covariance $MODEL_DB_PATH/eqtl/mashr/${model_db}.txt.gz \
         --gwas_file $GWAS_FILE_PATH/$gwas_file \
