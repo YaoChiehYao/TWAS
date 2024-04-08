@@ -7,7 +7,7 @@ Many thanks to the Finucane Lab and Pops team for providing this gene prioritiza
 ## Summary
 In our post GWAS study, we use Covid-19 GWAS summary data to predict the prioritization of covid19 related genes in human lung and human pbmc features. This is the code reproduction base on jupyter notebook,"pops.ipynb". All the used data, resource and reference are described below: <br>
 
-# Environment Setup
+## Environment Setup
 Please download the **pops pipeline data**, **magma software** and **gene features** to the current pops folder.<br>
 And arrange the feature folders according to the Tips below<br>
 
@@ -30,7 +30,7 @@ And arrange the feature folders according to the Tips below<br>
     <b>Tip:</b> Please refer to the pops example's data folder and arrange human_lung and human_pbmc similarly. This means you can create human_lung and humna_pmbc folders under the data folder and copy four folders (features_munged,features_raw,magma_scores, and utils) from the example data for each, replacing the files in features_raw with the download features(keep GTEx.txt). 
 </div>
 
-# hg38 reference panel
+## hg38 reference panel
 The PoPS Pipeline Data includes a reference panel of 1000G.EUR European genome data. If you want to use hg38 instead, please download the Plink 2.0 software and move its executable file "plink2.0" to the pops folder so the following script can run.
 <h3>Download Plink</h3>
 Please choose the operation system and version that suits you, and unzip it to the pops folder!
@@ -42,7 +42,7 @@ Please choose the operation system and version that suits you, and unzip it to t
     <b>Tip:</b> The common system path in Mac is "/usr/local/bin/" or "~/bin/" After placing the executed file, you can use plink or plink --version to check if the installation succeeded.
 </div>
 
-# Add codes to solve a common problem before running 
+## Add codes to solve a common problem before running 
 The "ValueError: shapes (18383,743) and (1867) not aligned: 743 (dim 1) != 1867 (dim 0)" issue is caused by the duplicated name in the generated matrix table. A **solution provided by Vinodsri** in the GitHub issue is adding codes renaming the feature clusters in the **munge_feature_directory.py** script.
 
 <h3>Insert the code chunk in the position and import os</h3>
